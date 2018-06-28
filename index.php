@@ -34,12 +34,21 @@ $aluno->setDessenha("@lun0");
 $aluno->insert();
 
 echo $aluno;*/
-
+/*
+//Altera um usuário
 $usuario = new Usuario();
 
 $usuario->loadById(5);
 
 $usuario->update("joao", "123654");
+
+echo $usuario;*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(7);
+
+$usuario->delete();
 
 echo $usuario;
 
