@@ -24,14 +24,23 @@ echo json_encode($search);*/
 $usuario = new Usuario();
 $usuario->login("jose", "1234567890");
 echo $usuario;*/
-
-$aluno = new Usuario("aluno", "@lun0");
 /*
+//Criando um novo usuário
+$aluno = new Usuario("aluno", "@lun0");
+
 $aluno->setDeslogin("aluno");
-$aluno->setDessenha("@lun0");*/
+$aluno->setDessenha("@lun0");
 
 $aluno->insert();
 
-echo $aluno;
+echo $aluno;*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(5);
+
+$usuario->update("joao", "123654");
+
+echo $usuario;
 
  ?>
